@@ -6,7 +6,7 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./front:/usr/src
+      - ./frontend:/usr/src
     depends_on:
       - back
     command: bash -c "cd /usr/src && npm run dev"
